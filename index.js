@@ -50,7 +50,7 @@ app.post('/sendmail', function(req, res){
         from: 'sekharbabu.golla@gmail.com', // sender address
         to: user.details.email, // list of receivers
         subject: 'Travel Details', // Subject line
-        html: user.details.fname + ' ' + user.details.lname + ' ' + '(' + user.details.mobile + ') will depart for' + user.travel.from + 'on ' + user.travel.departureDate + ' and return on ' + user.travel.returnDate
+        html: user.details.fname + ' ' + user.details.lname + ' ' + '(' + user.details.mobile + ') will depart from ' + user.travel.from + ' on ' + user.travel.departureDate + ' and return on ' + user.travel.returnDate
     };
 
     transporter.sendMail(mailOptions, function(error, info){

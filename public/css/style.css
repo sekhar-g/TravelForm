@@ -2,9 +2,11 @@
     background-color:transparent;
 }
 
+.headerText{
+    padding-top: 5px;
+}
+
 .form-body{
-    /*top: 150px;*/
-    /*margin-bottom: 500px;*/
     display: inherit;
     background: rgba(0,0,0,.4);
     padding: 0px;

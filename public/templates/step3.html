@@ -3,11 +3,42 @@
         <div class="row">
             <h3>Travel Information</h3>
         </div>
-<!--         <uib-tab index="2" heading="Conformation"> -->
-            {{ user.details.fname + ' ' + user.details.lname + ' ' + (user.details.mobile) }} will depart for {{ user.travel.from }} on {{ user.travel.departureDate }} and return on {{ user.travel.returnDate }}
 
-            <button class="btn btn-primary" ng-click="onSubmit(user)">Submit</button>
-        <!-- </uib-tab> -->
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 pull-left">Passenger Name: </div>
+            <div class="col-sm-5 pull-left">{{ user.details.fname + ' ' + user.details.lname}}</div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 pull-left">Departed From: </div>
+            <div class="col-sm-5 pull-left">{{ user.travel.from }}</div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 pull-left">Travel To: </div>
+            <div class="col-sm-5 pull-left">{{ user.travel.to }}</div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 pull-left">Journey Date: </div>
+            <div class="col-sm-5 pull-left">{{ user.travel.departureDate }}</div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 pull-left">Mobile No: </div>
+            <div class="col-sm-5 pull-left">{{user.details.mobile}}</div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <button class="btn btn-primary" ng-click="onSubmit(user)">Submit</button>
     </div>
 </div>
-{{ user }}
