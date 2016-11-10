@@ -1,0 +1,22 @@
+<div class="card row header">
+    <div><br><br><br></div>
+
+    <div class="col-md-12" style="box-shadow: WindowFrame 2px 2px 2px 2px">
+        <h3>
+            <span>{{mailContent[0].frstName}}</span>
+            <span> {{mailContent[0].lastName}}</span>
+            <span> {{mailContent[0].phno}}</span>
+            <span> will depart for</span>
+            <span>{{mailContent[0].city}}</span>
+            <span> on</span>
+            <span>{{mailContent[0].ddt|date:'dd-MM-yyyy'}}</span>
+            and return on <span>{{mailContent[0].rdt|date:'dd-MM-yyyy'}}</span>
+        </h3></div><br><br><br>
+
+    <button value="submit" class="btn btn-primary" ng-click="sendMail()">Send Email
+    </button><br><br><br>
+
+<div size="200,50" position="200,200">
+    <blink><span ng-show="pass.phno.length > 1" class="text-danger">{{messages}}</span></blink>
+    </div>
+</div>

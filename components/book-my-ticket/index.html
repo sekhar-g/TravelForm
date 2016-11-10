@@ -1,0 +1,16 @@
+<div class="container">
+    <form name="outerForm">
+        <uib-tabset active="active">
+            <uib-tab class="tab-disable col-xs-4" ui-sref-active="active" ui-sref=".step-one"
+                     heading="Journey Details" style="font-size:20px;"></uib-tab>
+            <uib-tab class="tab-disable col-xs-4" ui-sref-active="active" ui-sref=".step-two" heading="Personal Details" style="font-size:20px;">
+            </uib-tab>
+            <uib-tab class="tab-disable col-xs-4" ui-sref-active="active" ui-sref=".step-three"
+                     heading="Travel Information" style="font-size:20px;"></uib-tab>
+        </uib-tabset>
+    </form>
+    <div class="text-center">
+        <ui-view></ui-view>
+    </div>
+
+</div>

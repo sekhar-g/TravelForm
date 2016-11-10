@@ -1,0 +1,18 @@
+.tab-disable {
+    pointer-events: none;
+}
+
+.header {
+    color: red;
+    padding: 1px;
+    font-size: 20px;
+}
+
+.responsive-width {
+    font-size: 1vw;
+    white-space: normal;
+}
+
+.header-background{
+	background-color: #cccccc;
+}
